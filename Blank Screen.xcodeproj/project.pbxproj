@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E742A7B71C011375002EF892 /* BlankScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E742A7B61C011375002EF892 /* BlankScreenView.swift */; };
 		E7D569DE1C0109F1000D9039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D569DD1C0109F1000D9039 /* AppDelegate.swift */; };
 		E7D569E01C0109F1000D9039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D569DF1C0109F1000D9039 /* ViewController.swift */; };
 		E7D569E31C0109F1000D9039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D569E11C0109F1000D9039 /* Main.storyboard */; };
 		E7D569E51C0109F1000D9039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D569E41C0109F1000D9039 /* Assets.xcassets */; };
 		E7D569E81C0109F1000D9039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D569E61C0109F1000D9039 /* LaunchScreen.storyboard */; };
+		E7D569F01C010C4A000D9039 /* BlankScreenGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D569EF1C010C4A000D9039 /* BlankScreenGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E742A7B61C011375002EF892 /* BlankScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankScreenView.swift; sourceTree = "<group>"; };
 		E7D569DA1C0109F1000D9039 /* Blank Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blank Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D569DD1C0109F1000D9039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7D569DF1C0109F1000D9039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		E7D569E41C0109F1000D9039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7D569E71C0109F1000D9039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7D569E91C0109F1000D9039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D569EF1C010C4A000D9039 /* BlankScreenGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlankScreenGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +61,21 @@
 				E7D569DD1C0109F1000D9039 /* AppDelegate.swift */,
 				E7D569DF1C0109F1000D9039 /* ViewController.swift */,
 				E7D569E11C0109F1000D9039 /* Main.storyboard */,
-				E7D569E41C0109F1000D9039 /* Assets.xcassets */,
-				E7D569E61C0109F1000D9039 /* LaunchScreen.storyboard */,
-				E7D569E91C0109F1000D9039 /* Info.plist */,
+				E7D569EF1C010C4A000D9039 /* BlankScreenGestureRecognizer.swift */,
+				E742A7B61C011375002EF892 /* BlankScreenView.swift */,
+				E7F9FFDA1CD5398E000BAEC1 /* Support Files */,
 			);
 			path = "Blank Screen";
+			sourceTree = "<group>";
+		};
+		E7F9FFDA1CD5398E000BAEC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7D569E61C0109F1000D9039 /* LaunchScreen.storyboard */,
+				E7D569E41C0109F1000D9039 /* Assets.xcassets */,
+				E7D569E91C0109F1000D9039 /* Info.plist */,
+			);
+			name = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,7 @@
 				TargetAttributes = {
 					E7D569D91C0109F1000D9039 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = U7X923R2H9;
 					};
 				};
 			};
@@ -136,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7D569E01C0109F1000D9039 /* ViewController.swift in Sources */,
+				E7D569F01C010C4A000D9039 /* BlankScreenGestureRecognizer.swift in Sources */,
 				E7D569DE1C0109F1000D9039 /* AppDelegate.swift in Sources */,
+				E742A7B71C011375002EF892 /* BlankScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Blank Screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.granulate.Blank-Screen";
@@ -260,6 +278,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Blank Screen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.granulate.Blank-Screen";
@@ -286,6 +305,7 @@
 				E7D569EE1C0109F1000D9039 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
